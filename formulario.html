@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario Datos</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="funciones.js"></script>
+	<link rel="stylesheet" type="text/css" href="estilosFormulario.css">
+</head>
+<body>
+	<div class="principal">
+		<form name="frmDatos" action="nuevaPag.html" target="_self">
+			<div class="datos">
+				<div>
+					<h1>DATOS</h1>
+					<label for="txtN">Nombres:</label>
+					<input type="text" name="txtN" >
+					<label for="txtAp">&nbsp; Apellios:</label>
+					<input type="text" name="txtAp"><br>
+					<label for="txtN">Correo:</label>
+					<input type="text" name="txtN" >
+					<label for="txtAp">&nbsp; Password:</label>
+					<input type="text" name="txtAp">
+					<br>
+					<!--radio-->
+					<label for="rdbs">Sexo</label>
+					<input type="radio" id="rdbsM" name="rdbs" value="M" onclick="generoM()" checked/>M
+					<input type="radio" id="rdbsF" name="rdbs" value="F" onclick="generoF()" checked/>F<br><br>
+					<!--checkbox-->
+					<div class="row"><br>
+						<div class="lenguajes">
+							<label>¿Qué edad tienes?</label><br>
+							<input type="checkbox" name="prog1" value="C++">
+							<label for="prog1">Menor de 18</label><br>
+							<input type="checkbox" name="prog2" value="Java">
+							<label for="prog1">18 a 30</label><br>
+							<input type="checkbox" name="prog3" value="JavaScript">
+							<label for="prog1">31 a 50</label><br>
+							<input type="checkbox" name="prog4" value="Php">
+							<label for="prog1">Mayor de 50</label><br>	
+						</div><br>
+					<!--lista-->
+						<div class="proAca">
+							<label for="carrera">¿Con qué frecuencia sales de compras?</label><br>
+							<select align="top" name="carrera" size="1" class="sel">
+								<option value="Todos los dias">Todos los días</option>
+								<option value="Dia de por medio">Día de por medio</option>
+								<option value="Cada tercer dia">Cada tercer día</option>
+								<option value="Dos veces a la semana">Dos veces a la semana</option>
+								<option value="Fines de semana">Fines de semana</option>
+								<option value="Un dia cada dos semanas">Un día cada dos semanas</option>
+								<option value="Mensualmente">Mensualmente</option>
+								<br>
+							</select><br>
+						</div>
+					</div>
+					<input type="submit" name="Enviar"><br>
+				</div>
+			</div><br>
+			<div class="cajaTxt">
+				<!--textArea-->
+				<div class="texto">
+					<label for="desc">Ingrese su dirección:</label><br>
+					<p><textarea class="texTarea" id="taDesc" name="desc" rows="4" cols="40" ></textarea></p>
+					<input type="submit" name="Enviar" align="bottom">
+				</div>	
+			</div><br>
+			<div class="divImg">
+				<img class="imagenes" src=".\img\primera.jpg" id="imgn" onmouseover="cambiarImg1()" onmouseout="cambiarImg2()">
+			</div>
+		</form>
+	</div>
+</body>
+</html>
