@@ -3,9 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Registro</title>
-	<script type="text/javascript" src="funciones.js"></script>
-	<link rel="stylesheet" type="text/css" href="estilosFormulario.css">
+	<title>Lácteos</title>
 	<link rel="stylesheet" type="text/css" href="estiloJumbo.css">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="icon" href=".\imgJ\descarga.ico">
@@ -15,7 +13,7 @@
 	<header id="header" class="wrapper" style="top: 0px;" action="formulario.html" action="nuevaPag.html" target="_self"> 
 		<div class="center">
 			<div class="logo-wrapper">
-				<img class="logo" src=".\imgJ\JUMBO.jpg">
+				<img class="logo" src=".\imgJ\JUMBO.jpg" >
 			</div>
 			<div class="header-items">
 				<div class="top-nav-wrapper clear-fix">
@@ -84,9 +82,9 @@
 						<li><a href="supermercado.html">Supermercado</a>
 							<ul class="listado">
 								<li><a href="frutas.html">Frutas</a></li>
-				                <li><a href="verduras.html">Verduras</a></li>
-				                <li><a href="granos.html">Granos</a></li>
-				                <li><a href="lacteos.html">Lácteos</a></li>
+								<li><a href="verduras.html">Verduras</a></li>
+								<li><a href="granos.html">Granos</a></li>
+								<li><a href="lacteos.html">Lácteos</a></li>
 							</ul>
 						</li>
 						<li><a href="">Electrodomésticos</a>
@@ -115,77 +113,147 @@
 					</ul>
 				</li>
 			</ul>
-			<a class="boton" href="http://laweb.com" target="_blank">OFERTAS</a>
-			<a class="boton" href="http://laweb.com" target="_blank">TU TIENDA</a>
-			<a class="boton" href="http://laweb.com" target="_blank">CREAR PEDIDO</a>
-			<a class="botonI" href="http://laweb.com"><span class="footer-contact_icon_buy font-icn buy-footer"><img class="imagenC" ></a>
+			<a class="boton" href="" target="_blank">OFERTAS</a>
+			<a class="boton" href="" target="_blank">TU TIENDA</a>
+			<a class="boton" href="" target="_blank">CREAR PEDIDO</a>
+			<a class="botonI" href=""><span class="footer-contact_icon_buy font-icn buy-footer"><img class="imagenC" ></a>
 		</div>
-	</nav><br>
-	<div class="principal">
-		<form name="frmDatos" action="nuevaPag.html" target="_self">
-			<div class="datos">
-				<div>
-					<h1>DATOS</h1>
-					<label for="txtN">Nombres:</label>
-					<input type="text" name="txtN" >
-					<label for="txtAp">&nbsp; Apellios:</label>
-					<input type="text" name="txtAp"><br>
-					<label for="txtN">Correo:</label>
-					<input type="text" name="txtN" >
-					<label for="txtAp">&nbsp; Password:</label>
-					<input type="text" name="txtAp">
-					<br>
-					<!--radio-->
-					<label for="rdbs">Sexo</label>
-					<input type="radio" id="rdbsM" name="rdbs" value="M" onclick="generoM()" checked/>M
-					<input type="radio" id="rdbsF" name="rdbs" value="F" onclick="generoF()" checked/>F<br><br>
-					<!--checkbox-->
-					<div class="roww"><br>
-						<div class="lenguajes">
-							<label>¿Qué edad tienes?</label><br>
-							<div class="divLen">
-								<input type="checkbox" name="prog1" value="C++">
-								<label for="prog1">Menor de 18</label><br>
-								<input type="checkbox" name="prog2" value="Java">
-								<label for="prog1">18 a 30</label><br>
-								<input type="checkbox" name="prog3" value="JavaScript">
-								<label for="prog1">31 a 50</label><br>
-								<input type="checkbox" name="prog4" value="Php">
-								<label for="prog1">Mayor de 50</label><br>
-							</div>
-								
-						</div><br>
-					<!--lista-->
-						<div class="proAca">
-							<label for="carrera">¿Con qué frecuencia sales de compras?</label><br>
-							<select align="top" name="carrera" size="1" class="sel">
-								<option value="Todos los dias">Todos los días</option>
-								<option value="Dia de por medio">Día de por medio</option>
-								<option value="Cada tercer dia">Cada tercer día</option>
-								<option value="Dos veces a la semana">Dos veces a la semana</option>
-								<option value="Fines de semana">Fines de semana</option>
-								<option value="Un dia cada dos semanas">Un día cada dos semanas</option>
-								<option value="Mensualmente">Mensualmente</option>
-								<br>
-							</select><br>
-						</div>
-					</div>
-					<input type="submit" name="Enviar"><br>
-				</div>
-			</div><br>
-			<div class="cajaTxt">
-				<!--textArea-->
-				<div class="texto">
-					<label for="desc">Ingrese su dirección:</label><br>
-					<p><textarea class="texTarea" id="taDesc" name="desc" rows="4" cols="40" ></textarea></p>
-					<input type="submit" name="Enviar" align="bottom">
-				</div>	
-			</div><br>
-			<div class="divImg">
-				<img class="imagenes" src=".\img\primera.jpg" id="imgn" onmouseover="cambiarImg1()" onmouseout="cambiarImg2()">
-			</div>
-		</form>
-	</div>
+	</nav>    
+    <div class="album py-5 bg-light">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-topp" src=".\imgL\1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-topp" src=".\imgL\2.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-topp" src=".\imgL\3.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-topp" src=".\imgL\4.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-topp" src=".\imgL\5.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-topp" src=".\imgL\6.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-topp" src=".\imgL\7.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-topp" src=".\imgL\8.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-topp" src=".\imgL\9.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 	<footer id="footer" class="wrapper">
 		<div class="footer-contact">
 			<div class="footer-contact_center">
