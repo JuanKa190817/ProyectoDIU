@@ -18,7 +18,7 @@ function datos() {
 }
 
 function regresar() {
-	window.open("./jumbo.html","_self");
+	window.open("./index.html","_self");
 }
 
 function generoM() {
