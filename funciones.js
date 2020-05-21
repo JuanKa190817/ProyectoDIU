@@ -7,14 +7,18 @@ function datos() {
 			switch(campos[0]){
 				case "txtN": etiqueta="Nombres"; break;
 				case "txtAp": etiqueta="Apellidos"; break;
+				case "txtC": etiqueta="Correo"; break;
+				case "txtP": etiqueta="Password"; break;
 				case "rdbs": etiqueta="Sexo"; break;
-				case "prog1": etiqueta="Programa"; break;
-				case "carrera": etiqueta="Programa Académico"; break;
+				case "eda": etiqueta="Edad"; break;
+				case "fre": etiqueta="Frecuencia de compra"; break;
+				case "direc": etiqueta="Direción"; break;
+				
 			}
 			document.getElementById("parrafo").innerHTML+=etiqueta+": "+campos[1]+"<br>";
 		}
 	});
-	document.getElementById("parrafo").innerHTML+="<input type='button' value='Regresar' onclick='regresar()'>";
+	document.getElementById("parrafo").innerHTML+="<input type='button' value='Confirmar' onclick='regresar()'>";
 }
 
 function regresar() {

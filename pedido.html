@@ -3,14 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Confirmar datos</title>
-	<script type="text/javascript" src="funciones.js"></script>
-	<link rel="stylesheet" type="text/css" href="estilosFormulario.css">
+	<title>Crear pedido</title>
 	<link rel="stylesheet" type="text/css" href="estiloJumbo.css">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="icon" href=".\imgJ\descarga.ico">
 </head>
-<body class="pgBody" onload="datos()">
+<body>
 	<div id="fake-header" style="height: 90px;"></div>
 	<header id="header" class="wrapper" style="top: 0px;" action="formulario.html" action="nuevaPag.html" target="_self"> 
 		<div class="center">
@@ -120,10 +118,66 @@
       		<a class="boton" href="pedido.html" >CREAR PEDIDO</a>
      		<a class="botonI" href="carrito.html"><span class="footer-contact_icon_buy font-icn buy-footer"><img class="imagenC" ></a>
 		</div>
-	</nav>
-	<div class="divPgN">
-		<p id="parrafo">Confirma la información:<br></p>
-	</div>
+	</nav> <br>   
+    <form class="selector-box store-selector" method="post">
+    	<p class="title">Búsca tu tienda:</p>
+    	<div class="tab-wrapper">
+    		<div class="tab active" data-tab="city">POR CIUDAD</div>
+    		<div class="tab" data-tab="closeness">POR CERCANÍA</div>
+    	</div>
+    	<div class="selectors">
+    		<div class="selector-wrapper cities">
+    			<select id="cityselect" name="cityselect" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">
+    				<option></option>
+    				<option value="1">Barrancabermeja</option>
+    				<option value="2">Barranquilla</option>
+    				<option value="3">Bogotá</option>
+    				<option value="4">Bucaramanga</option>
+    				<option value="5">Cali</option>
+    				<option value="6">Cartagena</option>
+    				<option value="7">Chía</option>
+    				<option value="8">Girardot</option>
+    				<option value="9">Medellín</option>
+    				<option value="10">Pereira</option>
+    				<option value="11">Popayán</option>
+    				<option value="12">Santa Marta</option>
+    				<option value="17">Pasto</option>
+    			</select>
+    			<span class="select2 select2-container select2-container--contact-form-select" dir="ltr" style="width: 276px;">
+    				<span class="selection">
+    					<span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-cityselect-container">
+    						<span class="select2-selection__rendered" id="select2-cityselect-container">
+    							<span class="select2-selection__placeholder">Seleccionar Localidad</span>
+    						</span>
+    						<span class="select2-selection__arrow" role="presentation">
+    							<b role="presentation"></b>
+    						</span>
+    					</span>
+    				</span>
+    				<span class="dropdown-wrapper" aria-hidden="true"></span>
+    			</span>
+    		</div>
+    		<div class="selector-wrapper stores">
+    			<select id="storeselect" name="storeselect" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">
+    				<option></option>
+    			</select>
+    			<span class="select2 select2-container select2-container--contact-form-select" dir="ltr" style="width: 100px;">
+    				<span class="selection">
+    					<span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-storeselect-container">
+    						<span class="select2-selection__rendered" id="select2-storeselect-container">
+    							<span class="select2-selection__placeholder">Seleccionar Tienda</span>
+    						</span>
+    						<span class="select2-selection__arrow" role="presentation">
+    							<b role="presentation"></b>
+    						</span>
+    					</span>
+    				</span>
+    				<span class="dropdown-wrapper" aria-hidden="true"></span>
+    			</span>
+    		</div>
+    	</div>
+    	<input type="submit" class="button" value="Buscar Tienda">
+    </form>
 	<footer id="footer" class="wrapper">
 		<div class="footer-contact">
 			<div class="footer-contact_center">
