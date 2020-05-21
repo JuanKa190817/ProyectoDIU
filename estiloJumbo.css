@@ -118,9 +118,9 @@
 .logo{
 	margin: auto;
 	text-align: center;
-	height: 118px;
+	height: 130px;
 	background-position: -200px -18px;
-	padding: 7px;
+	padding: 10px;
 	transition: transform 0.25s;
 }
 .header-items{
@@ -380,7 +380,7 @@ label {
 }
 .imgCarousel{
 	align-items: center;
-	width: 120%;
+	width: 1130px;
 	height: 400px;
 }
 .food-site {
