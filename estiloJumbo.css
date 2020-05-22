@@ -270,7 +270,7 @@ nav {
 /*.input {
     height: initial;
 }*/
-.input {
+.search-autocomplete-wrapper .input {
     height: 100px;
     color: #bababa;
     margin-left: 0 !important;
