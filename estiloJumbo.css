@@ -118,9 +118,9 @@
 .logo{
 	margin: auto;
 	text-align: center;
-	height: 118px;
+	height: 130px;
 	background-position: -200px -18px;
-	padding: 7px;
+	padding: 10px;
 	transition: transform 0.25s;
 }
 .header-items{
@@ -270,7 +270,7 @@ nav {
 /*.input {
     height: initial;
 }*/
-.input {
+.search-autocomplete-wrapper .input {
     height: 100px;
     color: #bababa;
     margin-left: 0 !important;
@@ -380,7 +380,7 @@ label {
 }
 .imgCarousel{
 	align-items: center;
-	width: 120%;
+	width: 1130px;
 	height: 400px;
 }
 .food-site {
@@ -550,4 +550,61 @@ ul {
 }
 body.sc-1 .sc-1-hide {
     display: none;
+}
+
+.selector-box {
+    position: relative;
+    top: 50%;
+    margin: auto;
+}
+
+.selector-box {
+    padding: 0 25px;
+    padding-bottom: 50px;
+    background-color: #323232;
+    z-index: 1;
+    width: 380px;
+    border-radius: 5px;
+}
+
+.title1 {
+    margin-top: -2px;
+    border-bottom: 1px solid #CFCFCF;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.select2-hidden-accessible {
+    width: 70%!important;
+}
+
+.selector-box .button {
+    width: 226px;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 46px;
+    height: 46px;
+    font-size: .875rem;
+    font-weight: 600;
+    border: none;
+    letter-spacing: 1px;
+    background-color: #FF9700;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 10px;
+}
+
+.produ{
+    text-align: left;
+    position: relative;
+    color: white;
+    display: flex;
+}
+
+.produ1{
+    margin: 10px;
+}
+
+.propi{
+    margin: 30px;
 }
